@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <img className="w-9 mr-2" src={user} alt="" />
-                <a className="btn btn-sm px-6 bg-slate-600 text-white rounded-none">Login</a>
+                <Link to="login" className="btn btn-sm btn-secondary border-none px-6 bg-slate-600 text-white rounded-none">Login</Link>
             </div>
         </div>
     );

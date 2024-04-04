@@ -6,7 +6,7 @@ import qZone3 from "../../../assets/qZone3.png";
 const RightSideNav = () => {
     return (
         <div>
-            <div className="space-y-2 mb-6">
+            <div className="space-y-2 mb-8">
                 <h2 className="text-2xl">Login With</h2>
                 <button className="btn btn-outline w-full btn-sm">
                     <FaGoogle />
@@ -17,7 +17,7 @@ const RightSideNav = () => {
                     Login With GitHub
                 </button>
             </div>
-            <div className="mb-6">
+            <div className="my-6">
                 <h2 className="text-2xl mb-2">Find Us</h2>
                 <a className="flex gap-2 items-center border-2 rounded-t-lg p-3" href="facebook.com">
                     <FaFacebook></FaFacebook>
@@ -34,8 +34,8 @@ const RightSideNav = () => {
             </div>
 
             {/* Q zone */}
-            <div className="space-y-2 mb-6">
-                <h2 className="text-2xl">Login With</h2>
+            <div className="space-y-2 mb-6 bg-base-200 p-1">
+                <h2 className="text-2xl font-medium p-3">Q Zone</h2>
                <img src={qZone1} alt="" />
                <img src={qZone2} alt="" />
                <img src={qZone3} alt="" />
