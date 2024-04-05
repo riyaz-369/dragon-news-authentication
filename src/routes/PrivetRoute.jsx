@@ -7,7 +7,8 @@ const PrivetRoute = ({ children }) => {
 
     const { user, loading } = useContext(AuthContext);
     const location = useLocation()
-    console.log(location)
+    console.log(location.pathname)
+
     if (loading) {
         return <div className="flex items-center justify-center h-screen">
             <span className="loading loading-spinner loading-lg"></span>
@@ -16,7 +17,7 @@ const PrivetRoute = ({ children }) => {
     if (user) {
         return children;
     }
-    return <Navigate to="/login"></Navigate>
+    return <Navigate state={location.pathname} to="/login"></Navigate>
 };
 
 export default PrivetRoute;
