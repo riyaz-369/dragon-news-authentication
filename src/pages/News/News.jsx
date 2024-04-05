@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Header from "../Shared/Header/Header";
 import RightSideNav from "../Shared/RightSideNav/RightSideNav";
 import Navbar from "../Shared/Navbar/Navbar";
